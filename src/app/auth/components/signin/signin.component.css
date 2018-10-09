@@ -1,0 +1,40 @@
+.position {
+  display: flex;
+  flex-direction: column;
+  }
+  .mat-card-header{
+      margin-top:2%;
+      font-size:1.25rem;
+      margin-left:40%;
+      font-family:"initial";
+      font-style:italic;
+      }
+
+      .mat-flat-button {
+          margin-bottom:10%;
+          width:auto;
+        
+      }
+      .center {
+          padding-top:10%;
+      }
+
+    .example-card {
+        margin-top:-10%;
+        width:70%;
+        margin-left:5%;
+    }
+    .errorInfo{
+      width:250px;
+      color: darkred !important;
+      font-size: small;
+    }
+      @media only screen and (max-width: 575px) {
+          .example-card {
+              margin-left: -45%;
+              width: 170%;
+          }
+          }
+          a {
+              color:#007bff!important;
+            }

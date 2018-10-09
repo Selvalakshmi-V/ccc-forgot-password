@@ -1,0 +1,39 @@
+<div class="offset-sm-3  col-sm-6 center">
+
+  <mat-card class="example-card">
+    <div class="floatright">
+      <mat-icon routerLink="../" style=cursor:pointer>clear</mat-icon>
+    </div>
+    <mat-card-header>
+      <mat-card-title>
+        <h4>LOGIN </h4>
+      </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="container position">
+          <div class="row justify-content-center" *ngIf="errorMsg">
+              <p class="errorInfo text-center">{{errorMsg}}</p>
+          </div>
+        <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <mat-form-field>
+            <input matInput placeholder="EmailId" type="text" formControlName="email">
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Password" type="Password" formControlName="password">
+          </mat-form-field>
+          <p>
+            <a routerLink="/forgotPassword" class="floatright"><b>Forgot Password?</b></a>
+          </p>
+          <button mat-flat-button color="primary" [disabled]="!loginForm?.valid" (click)="onSignin()">SIGN IN</button>
+          <p class="textcenter">Don't have an account? </p>
+          <div class="offset-4 offset-md-5">
+            <mat-chip-list>
+              <mat-chip color="primary" selected routerLink="/register">SIGN UP</mat-chip>
+            </mat-chip-list>
+          </div>
+        </form>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

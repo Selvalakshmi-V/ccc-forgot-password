@@ -1,0 +1,93 @@
+.mat-grid-tile .mat-grid-tile-footer, .mat-grid-tile .mat-grid-tile-header  {
+  background: transparent;
+}
+
+body{
+margin-top:-8px;
+margin-left:-8px;
+margin-right:-8px;
+
+}
+
+
+.text-info {
+  color:#fbeeab;
+}
+
+
+.bg{
+background-size:cover;
+background-repeat:no-repeat;
+height:100vh;
+opacity: 0.8;
+
+/* position: fixed; */
+/* width:100%; */
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTysGizWEQWWmqFvWC1ssXLc0gxxV0j5uidGqCq5cXI6QqKaZ9-6g);
+/* background-image: url(http://www.7wdata.be/wp-content/uploads/2017/01/why-businesses-must-make-cyber-security-skills-a-priority-in-2017.png) */
+
+}
+.icon{
+font-size:60px;
+color:blue
+
+}
+
+.company{
+
+font-size:50px;
+color:white;
+}
+.jumbotron{
+
+
+background-color: transparent;    opacity: 0.8;
+color:white; font-size:40px;
+font-family:calisto mt;
+font-weight: bold;
+}
+
+
+@media (max-width: 400px) { 
+.jumbotron[_ngcontent-c1]{
+font-size:20px;
+padding:0;
+}
+.h3, h3{
+    font-size: 20px;
+}
+.company[_ngcontent-c1]{
+    font-size: 20px;
+}
+}
+@media (max-width: 576px) { 
+.company{
+    font-size:30px;
+    padding-top:5%;
+    
+}
+.contact{
+padding-top:5%;
+padding-bottom: 5%;
+}
+mat-card{
+    background-color: transparent;
+    height:100px;
+    width:100px;
+    color:white;
+    opacity: 0.8;
+}
+.register{
+    padding-top:5%;padding-bottom: 5%;
+}
+.jumbotron{
+    font-size:30px; 
+    opacity: 1;
+}
+.icon{
+   
+    color:white;
+   
+}
+
+}

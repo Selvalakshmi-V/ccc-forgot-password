@@ -1,0 +1,92 @@
+<mat-toolbar fxLayoutAlign="center center" color="primary">
+  User Registration
+</mat-toolbar>
+<div class="offset-sm-3  col-sm-6 center">
+
+  <div class="container">
+
+    <!-- <nav mat-tab-nav-bar >
+        <a mat-tab-link *ngFor="let link of links"
+         
+           [active]="activeLink == link"> {{link}} </a>
+       
+      </nav> -->
+
+
+    <!-- <ngb-tabset class="tabposition"> -->
+    <!-- <ngb-tab title="Step 1">
+              <ng-template ngbTabContent> -->
+    <div *ngIf="reg;else step2" class="display">
+      <form class="pt-5  example-container display" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+
+
+        <mat-form-field>
+          <input matInput placeholder="First Name" formControlName="firstname">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Last Name" formControlName="lastname">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password" type="password" formControlName="password">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Company Name" formControlName="companyname">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Contact Number" formControlName="contact">
+        </mat-form-field>
+
+
+        <button mat-flat-button color="primary" type="submit">Next</button>
+
+      </form>
+    </div>
+    <!-- </ng-template>
+            </ngb-tab> -->
+
+    <!-- <ngb-tab title="Step 2" [disabled]="aa">
+                <ng-template ngbTabContent> -->
+    <ng-template #step2>
+      <div class="display">
+        <form [formGroup]="securityquestions" (ngSubmit)="secretanswers()">
+          <mat-form-field>
+            <mat-label> Security Question 1</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option>None</mat-option>
+              <mat-option value="option1">who is your favourite sports man?</mat-option>
+              <mat-option value="option2">What is your first school name?</mat-option>
+            </mat-select>
+
+          </mat-form-field>
+          <mat-form-field>
+            <textarea matInput placeholder="Enter your answer here" formControlName="firstanswer"></textarea>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label> Security Question 2</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option>None</mat-option>
+              <mat-option value="option4">What is your first pet name?</mat-option>
+              <mat-option value="option5">What is name of the street where you grew up? </mat-option>
+            </mat-select>
+
+          </mat-form-field>
+          <mat-form-field>
+            <textarea matInput placeholder="Enter your answer here" formControlName="secondanswer"></textarea>
+          </mat-form-field>
+          <button mat-flat-button color="primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </ng-template>
+    <!-- </ng-template>
+              </ngb-tab>
+        
+           
+          </ngb-tabset> -->
+  </div>
+</div>

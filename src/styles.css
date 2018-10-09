@@ -1,0 +1,150 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.headertext {
+    /* color: #3949ab!important; */
+    font-size: 120%;
+    font-family: "consolas" !important;
+    /* font-weight: 500 !important; */
+    text-align: center;
+}
+
+mat-icon {
+    color: #3949ab;
+}
+
+
+.cardheading{
+        color:#3949ab;
+        text-align:center;
+ }
+    
+.cardcontent{
+    color:blue;
+    margin-right:10px;
+}
+.fa {
+        font-size:20px;
+        color: #3949ab;
+ }
+ table {
+        width: 90%;
+        margin-left:5%;
+        /* margin-right:5%;  */
+ }
+
+.textcenter{
+      text-align: center !important;
+ }
+
+ .mat-datepicker-toggle {  
+     color:  #3949ab;
+     font-size:15px;
+}
+
+ th.mat-header-cell{
+     color:#3949ab;
+  }
+
+.mat-list .mat-list-item{
+     font-size:16px;
+  
+}
+.floatright{
+     float: right;
+}
+ .table thead th {
+     vertical-align: middle !important;
+    color:  #3949ab;
+}
+
+.mat-paginator {
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom: 5%;
+ }
+
+.example-icon {
+    padding: 0 14px;
+}
+      
+ .example-spacer {
+      flex: 1 1 auto;
+}
+
+
+ @media (min-width: 600px) and (max-width: 767.98px) { 
+        .mat-card{
+          
+            margin-top:30px;
+               }
+        .custom{
+               margin-top:10%;
+          }
+        .mat-list{
+            margin-left:30%;
+           
+        }
+}
+  
+  
+  
+    /* bootstrapcss */
+
+    .offset-sm-3 {
+        margin-left: 25% !important;
+      }
+
+      .col-sm-6 {
+        -ms-flex: 0 0 50% !important;
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+      }
+
+      .offset-4 {
+        margin-left: 33.333333%;
+      }
+      .offset-md-5 {
+        margin-left: 41.666667%;
+      }      
+         
+      .offset-md-3 {
+        margin-left: 25%;
+      }
+
+ /* userdetails center */
+ @media only screen and (min-width: 600px) {
+        .mat-list{
+            margin-left:20%;
+           margin-right:30%;
+        } 
+}
+
+ /* sendmailform, adminadduser, admineditprofile, buynewreport, usereditprofile */
+   .example-form {
+    display: flex;
+    flex-direction: column;
+        /* margin-left:20%;
+        margin-right:20%; */
+    margin-left:10%;
+    margin-right:10%;
+}
+
+/* editprofile, admineditprofile */
+.profile{
+    margin-left:40%;
+    font-family:"initial";
+    font-style:italic;
+}
+    
+
+/* tablefilter */
+
+  
+.tablefilter {
+    font-size: 14px;
+    width: 50%;
+    margin-left: 30px;
+  }

@@ -1,0 +1,38 @@
+<!-- <router-outlet></router-outlet> -->
+<body class="container-fluid bg ">
+  <div class="row p-5 textcenter">
+    <div class="text-light company">COMMAND CREDIT CORP</div>
+  </div>
+  <h3 class="h3 text-info textcenter" routerLink="/adminnavbar/home" style=cursor:pointer>Admin login</h3>
+  <div class=" h3 jumbotron container textcenter" style="margin-top:10%;">
+    We provide you High Accuracy Statistical data!
+  </div>
+  <mat-grid-list [cols]="breakpoint" rowHeight="200px" (window:resize)="onResize($event)">
+    <mat-grid-tile routerLink="/app/contactus">
+      <mat-icon class="icon">contact_mail</mat-icon>
+      <mat-grid-tile-footer fxFlexOffset.xs="25%" fxFlexOffset="40%">
+        <h3> CONTACT US</h3>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+    <mat-grid-tile [routerLink]="['/login']">
+      <mat-icon class="icon">lock_open</mat-icon>
+      <mat-grid-tile-footer fxFlexOffset.xs="35%" fxFlexOffset="45%">
+        <h3>LOGIN</h3>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+    <mat-grid-tile routerLink="/myoffer">
+      <mat-icon class="icon"> local_offer </mat-icon>
+      <mat-grid-tile-footer fxFlexOffset.xs="35%" fxFlexOffset="45%">
+        <h3>OFFERS</h3>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+    <mat-grid-tile [routerLink]="['/register']">
+      <mat-icon class="icon">how_to_reg</mat-icon>
+      <mat-grid-tile-footer fxFlexOffset.xs="30%" fxFlexOffset="45%">
+        <h3>REGISTER</h3>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+  </mat-grid-list>
+</body>
+
+
